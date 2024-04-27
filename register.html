@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Register</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-grid">
+      <h1>HEALTHY <span class="black-text">NEWS.</span></h1>
+    </div>
+    <div class="right-grid">
+      <form id="registerForm" action="javascript:void(0);">
+        <h2>Register</h2>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Type your Email" required>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Type your username" required>
+
+        <label for="password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" placeholder="Type your password" required>
+          <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+        </div>
+
+        <div id="registerResult" class="register-result"></div> 
+        <div class="button-register">
+          <button type="button" onclick="register()">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
